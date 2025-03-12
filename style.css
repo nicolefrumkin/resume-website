@@ -27,11 +27,6 @@ span {
   font-weight: 650;
 }
 
-footer {
-  background-color: #adebf8;
-  text-align: center;
-}
-
 img {
   float: right;
   position: relative;
@@ -47,7 +42,7 @@ li ul {
   color: white !important;
 }
 
-#contact-info {
+#contact-info footer {
   background-color: #0070c0;
   text-align: center;
   color: white;
