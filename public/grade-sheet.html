@@ -1,81 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <title>Grade Sheet</title>
-   </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grade Sheet</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-   <body>
-       <h1>Record Of Studies</h1>
-       <p>STUDENT NAME: Nicole Frumkin | DATE: 04/03/2025</p>
+  <body>
+    <h1>Record Of Studies</h1>
+    <p>
+      STUDENT NAME: <span>Nicole Frumkin</span> | DATE: <span>12/03/2025</span>
+    </p>
+    <h2 class="title">First Semester 2021/22</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Linear Algebra for Electrical Engineering</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Calculus 1b for Electrical Engineering</td>
+          <td>93</td>
+        </tr>
+        <tr>
+          <td>Programming - Python</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Cellular Biology</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>Chemistry for Engineering</td>
+          <td>74</td>
+        </tr>
+      </tbody>
+    </table>
 
-       <h2>First Semester 2021/22</h2>
-       <ul>
-        <li>Linear Algebra for Electrical Engineering – Grade: 90</li>
-        <li>Calculus 1b for Electrical Engineering – Grade: 93</li>
-        <li>Programming - Python – Grade: 90</li>
-        <li>Cellular Biology – Grade: 74</li>
-        <li>Chemistry for Engineering (1) – Grade: 74</li>
-       </ul>
+    <h2 class="title">Second Semester 2021/22</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ordinary Differential Equations for Electrical Engineering</td>
+          <td>93</td>
+        </tr>
+        <tr>
+          <td>Physics (1)</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Physics - Lab</td>
+          <td>93</td>
+        </tr>
+        <tr>
+          <td>Chemistry for Engineering (2)</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>Programming 2: Data-Structures in Matlab</td>
+          <td>95</td>
+        </tr>
+      </tbody>
+    </table>
 
-       <h2>Second Semester 2021/22</h2>
-       <ul>
-        <li>Ordinary Differential Equations for Electrical Engineering – Grade: 76</li>
-        <li>Calculus 2b for Electrical Engineering – Grade: 93</li>
-        <li>Physics (1) – Grade: 92</li>
-        <li>Physics - Lab – Grade: 93</li>
-        <li>Chemistry for Engineering (2) – Grade: 87</li>
-        <li>Programming 2: Data-Structures in Matlab – Grade: 95</li>
-        </ul>
+    <h2 class="title">First Semester 2022/23</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Introduction to Probability and Statistics</td>
+          <td>81</td>
+        </tr>
+        <tr>
+          <td>Harmonic Analysis</td>
+          <td>79</td>
+        </tr>
+        <tr>
+          <td>Complex Functions</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>Digital Logic Systems</td>
+          <td>83</td>
+        </tr>
+        <tr>
+          <td>Physics (2)</td>
+          <td>91</td>
+        </tr>
+      </tbody>
+    </table>
 
-       <h2>First Semester 2022/23</h2>
-        <ul>
-            <li>Introduction to Probability and Statistics – Grade: 81</li>
-            <li>Harmonic Analysis – Grade: 79</li>
-            <li>Complex Functions – Grade: 75</li>
-            <li>Digital Logic Systems – Grade: 83</li>
-            <li>Physics (2) – Grade: 91</li>
-        </ul>
+    <h2 class="title">Second Semester 2022/23</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Partial Differential Equations</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>Data Structures and Algorithms</td>
+          <td>78</td>
+        </tr>
+        <tr>
+          <td>Electromagnetic Fields</td>
+          <td>87</td>
+        </tr>
+        <tr>
+          <td>Quantum and Solid State Physics</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Linear Circuits and Systems</td>
+          <td>66</td>
+        </tr>
+      </tbody>
+    </table>
 
-       <h2>Second Semester 2022/23</h2>
-       <ul>
-        <li>Partial Differential Equations – Grade: 82</li>
-        <li>Data Structures and Algorithms – Grade: 78</li>
-        <li>Electromagnetic Fields – Grade: 87</li>
-        <li>Quantum and Solid State Physics – Grade: 100</li>
-        <li>Linear Circuits and Systems – Grade: 66</li>
-    </ul>
+    <h2 class="title">First Semester 2023/24</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Electronic Devices</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Random Signals and Noise</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>Signals and Systems</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>Wave Transmission and Distributed Systems</td>
+          <td>69</td>
+        </tr>
+        <tr>
+          <td>Introduction to Control Theory</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>A History of Humanity: The First Three Thousand Years</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+    </table>
 
-       <h2>First Semester 2023/24</h2>
-       <ul>
-        <li>Electronic Devices – Grade: 70</li>
-        <li>Random Signals and Noise – Grade: 65</li>
-        <li>Signals and Systems – Grade: 75</li>
-        <li>Wave Transmission and Distributed Systems – Grade: 69</li>
-        <li>Introduction to Control Theory – Grade: 82</li>
-        <li>A History of Humanity: The First Three Thousand Years – Grade: 100</li>
-    </ul>
+    <h2 class="title">Second Semester 2023/24</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Programming 2 - C</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>Analog Electronic Circuits</td>
+          <td>74</td>
+        </tr>
+        <tr>
+          <td>Digital Electronic Circuits</td>
+          <td>72</td>
+        </tr>
+        <tr>
+          <td>Computer Organization</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>Photovoltaic Energy Conversion</td>
+          <td>72</td>
+        </tr>
+      </tbody>
+    </table>
 
-       <h2>Second Semester 2023/24</h2>
-       <ul>
-        <li>Programming 2 - C – Grade: 89</li>
-        <li>Analog Electronic Circuits – Grade: 74</li>
-        <li>Digital Electronic Circuits – Grade: 72</li>
-        <li>Computer Organization – Grade: 88</li>
-        <li>Photovoltaic Energy Conversion – Grade: 72</li>
-    </ul>
-
-       <h2>First Semester 2024/25</h2>
-       <ul>
-        <li>Advanced Control Lab – Grade: 95</li>
-        <li>Electronics - Laboratory 1 – Grade: 93</li>
-        <li>Design Project A</li>
-        <li>Introduction to Digital Signal Processing - Grade: 60</li>
-        <li>Operating Systems – Grade: 91</li>
-        <li>Introduction to VLSI Design – Grade: 92</li>
-        <li>Climate Change and Sustainability: A Multi-Disciplinary View – Grade: 92</li>
-    </ul>
-
-       <h2>Grade Point Average: 82</h2>
-   </body>
+    <h2 class="title">First Semester 2024/25</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Advanced Control Lab</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>Electronics - Laboratory 1</td>
+          <td>93</td>
+        </tr>
+        <tr>
+          <td>Design Project A</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Introduction to Digital Signal Processing</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Operating Systems</td>
+          <td>91</td>
+        </tr>
+        <tr>
+          <td>Introduction to VLSI Design</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>Climate Change and Sustainability: A Multi-Disciplinary View</td>
+          <td>92</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <footer>
+    <p>Grade Point Average: 82</p>
+  </footer>
 </html>
