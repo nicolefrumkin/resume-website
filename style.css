@@ -42,7 +42,7 @@ li ul {
   color: white !important;
 }
 
-#contact-info footer {
+footer, #contact-info {
   background-color: #0070c0;
   text-align: center;
   color: white;
