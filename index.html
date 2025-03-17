@@ -1,148 +1,597 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicole Frumkin | Microelectronics Engineer</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
-
   <body>
-    <div id="header">
-      <h1>Nicole Frumkin</h1>
-      <h2>
-        4th Year Electrical Engineering Student, Looking for Software
-        Development Positions
-      </h2>
-    </div>
-    <div id="contact-info">
-      <p>
-        <a href="mailto:nicolefrumkin@gmail.com">nicolefrumkin@gmail.com</a> |
-        +972-52-653-9052 |
-        <a href="https://www.linkedin.com/in/nicolefrumkin/">LinkedIn</a> |
-        <a href="https://github.com/nicolefrumkin">GitHub</a>
-      </p>
-    </div>
-    <div class="image-container">
-      <img
-        src="./assets/images/Profile Picture.jpg"
-        height="300"
-        alt="Image of Nicole"
-      />
-    </div>
-    <h3 class="title">Summary</h3>
-    <p id="summary-text">
-      Hi! I'm a motivated electronics student
-      <span>looking for a junior position</span>, passionate about software
-      development. I've completed courses in
-      <span>Data Structures, Python, and Computer Organization</span> and am
-      self-taught in C, specializing in low-level programming. I'm currently
-      taking a Full-Stack Developer course on Udemy, learning HTML, CSS, and
-      JavaScript. As a creative problem solver and team player, I’m eager to
-      bring value to your team.
-    </p>
-    <hr />
+    <!-- Accessibility skip link -->
+    <a href="#main-content" class="visually-hidden-focusable"
+      >Skip to main content</a
+    >
 
-    <h3 class="title">Education</h3>
-    <h4>B.Sc. in Electrical Engineering</h4>
-    <p class="date">Tel Aviv University | Oct 2021 - Present</p>
-    <ul>
-      <li>GPA: 82</li>
-      <li>
-        Received the following grades in courses:
-        <ul>
-          <li>MATLAB - 95</li>
-          <li>Python - 90</li>
-          <li>Operating Systems - 91</li>
+    <!-- Dark Mode Toggle (now as a button) -->
+    <button
+      class="dark-mode-toggle"
+      id="darkModeToggle"
+      aria-label="Toggle dark mode"
+    >
+      <i class="bi bi-moon-fill" aria-hidden="true"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar sticky-top" id="mainNav">
+      <div class="container">
+        <ul class="nav nav-pills mx-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#volunteer">Volunteer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/grade-sheet.html">Grade Sheet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/contact.html">Contact</a>
+          </li>
         </ul>
-      </li>
-      <li><a href="./public/grade-sheet.html">Grade Sheet</a></li>
-    </ul>
-    <h4>Moshal Scholarship Program</h4>
-    <p class="date">Oct 2021 - Present</p>
-    <ul>
-      <li>
-        Awarded a scholarship aimed at dedicated undergraduate students from
-        challenging socio-economic backgrounds.
-      </li>
-    </ul>
-    <hr />
+      </div>
+    </nav>
 
-    <h3 class="title">Projects</h3>
-    <h4>Processor Simulator</h4>
-    <ul>
-      <li>
-        Developed an assembler and a simulator in C to emulate processor
-        behavior.
-      </li>
-    </ul>
-    <h4>Linux Projects</h4>
-    <ul>
-      <li>
-        Developed applications involving process management, multithreading, and
-        networking, demonstrating advanced knowledge of Linux systems.
-      </li>
-    </ul>
-    <hr />
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__shape"></div>
+        <div class="container hero__content">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+              <h1 class="display-2 fw-bold mb-3">Nicole Frumkin</h1>
+              <h2 class="h3 mb-4">Microelectronics Engineer</h2>
+              <p class="lead mb-4">
+                Hi! I'm a motivated electronics student looking for a junior
+                position, passionate about software development. I've completed
+                courses in Data Structures, Python, and Computer Organization
+                and am self-taught in C, specializing in low-level programming.
+              </p>
+              <div
+                class="d-flex gap-3 mb-5 justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="https://www.linkedin.com/in/nicolefrumkin/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn Profile"
+                >
+                  <i class="bi bi-linkedin me-2" aria-hidden="true"></i>LinkedIn
+                </a>
+                <a
+                  href="https://github.com/nicolefrumkin"
+                  class="btn btn-outline-secondary"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub Profile"
+                >
+                  <i class="bi bi-github me-2" aria-hidden="true"></i>GitHub
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <img
+                src="./assets/images/profile_img.jpeg"
+                class="img-fluid hero__image"
+                alt="Nicole Frumkin portrait"
+                width="600"
+                height="600"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <h3 class="title">Achievements</h3>
-    <h4>2nd Place - "To the Moon and Back” Hackathon</h4>
-    <ul>
-      <li>
-        Collaborated with a team of five over 27 hours to develop an application
-        that tracks and displays the position of the Beresheet spacecraft.
-      </li>
-    </ul>
-    <h4>Apple Students Excellence Award</h4>
-    <ul>
-      <li>
-        Awarded by Apple for outstanding academic and social achievements.
-      </li>
-    </ul>
-    <hr />
+      <!-- Qualities Section -->
+      <section class="section" id="qualities">
+        <div class="container" data-aos="fade-up">
+          <h2 class="display-6 fw-bold text-center section-title">
+            What I Bring to the Team
+          </h2>
+          <div class="row g-4 mt-4">
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <div class="icon-circle mb-4">
+                    <i
+                      class="bi bi-lightbulb text-primary fs-1"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <h3 class="fw-bold h5">Sharp Minded</h3>
+                  <p>
+                    Quick thinker with strong problem-solving skills and
+                    analytical approach to challenges.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    <h3 class="title">Volunteer Experience</h3>
-    <h4>Teaching Hebrew to Ukrainian Refugees</h4>
-    <ul>
-      <li>
-        Helped Ukrainian refugees integrate by teaching them Hebrew after their
-        arrival in Israel following the Russia-Ukraine war.
-      </li>
-    </ul>
-    <h4>Humanitarian Aid for Soldiers and Residents</h4>
-    <ul>
-      <li>
-        Organized and distributed aid packages to support soldiers and residents
-        of the Gaza border area at the onset of the Israel war.
-      </li>
-    </ul>
-    <hr />
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <div class="icon-circle mb-4">
+                    <i
+                      class="bi bi-people text-primary fs-1"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <h3 class="fw-bold h5">Team Player</h3>
+                  <p>
+                    Collaborative and thrives in a supportive team environment
+                    with excellent communication skills.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    <h3 class="title">Skills</h3>
-    <ul>
-      <li>C</li>
-      <li>Python</li>
-      <li>Linux</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-    <hr />
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <div class="icon-circle mb-4">
+                    <i
+                      class="bi bi-speedometer2 text-primary fs-1"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <h3 class="fw-bold h5">Fast Learner</h3>
+                  <p>
+                    Adapts quickly to new challenges and technologies with
+                    enthusiasm and dedication.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    <h3 class="title">Languages</h3>
-    <ul>
-      <li>Hebrew - Native</li>
-      <li>English - Native</li>
-      <li>Russian - Native</li>
-    </ul>
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="card p-4 h-100">
+                <div class="card-body text-center">
+                  <div class="icon-circle mb-4">
+                    <i
+                      class="bi bi-book-half text-primary fs-1"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <h3 class="fw-bold h5">Passionate Learner</h3>
+                  <p>
+                    Always eager to expand knowledge and improve skills through
+                    continuous education.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section class="section" id="education">
+    <div class="container" data-aos="fade-up">
+      <h2 class="display-6 fw-bold text-center section-title">Education</h2>
+      <div class="row gx-4 justify-content-center mt-4">
+        <div
+          class="col-md-6 col-lg-4 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="card h-100">
+            <div class="position-relative overflow-hidden">
+              <img
+                src="./assets/images/degree.jpeg"
+                class="card-img-top"
+                alt="University campus view"
+                loading="lazy"
+                width="800"
+                height="400"
+              />
+            </div>
+            <div class="card-body p-4">
+              <h3 class="card-title fw-bold h5">
+                B.Sc. in Electrical Engineering
+              </h3>
+              <p class="text-muted mb-3">
+                <i class="bi bi-building me-2" aria-hidden="true"></i>Tel
+                Aviv University | Oct 2021 - Present
+              </p>
+              <div class="card-text">
+                <div class="d-flex justify-content-between mb-2">
+                  <span>GPA</span>
+                  <span class="fw-bold">82</span>
+                </div>
+                <p class="mb-2">Course Grades:</p>
+                <div class="d-flex justify-content-between mb-1">
+                  <span>MATLAB</span>
+                  <span class="fw-bold">95</span>
+                </div>
+                <div class="d-flex justify-content-between mb-1">
+                  <span>Python</span>
+                  <span class="fw-bold">90</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>Operating Systems</span>
+                  <span class="fw-bold">91</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100">
+            <div class="position-relative overflow-hidden">
+              <img
+                src="./assets/images/moshal.jpeg"
+                class="card-img-top"
+                alt="Nicole with South African Moshal scholars"
+                loading="lazy"
+                width="800"
+                height="400"
+              />
+            </div>
+            <div class="card-body p-4">
+              <h3 class="card-title h5 fw-bold">
+                Moshal Scholarship Program
+              </h3>
+              <p class="text-muted mb-3">
+                <i class="bi bi-calendar me-2" aria-hidden="true"></i>Oct
+                2021 - Present
+              </p>
+              <p class="card-text">
+                Awarded a prestigious scholarship aimed at dedicated
+                undergraduate students from challenging socio-economic
+                backgrounds who demonstrate exceptional academic potential
+                and community leadership.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Achievements Section -->
+      <section class="section" id="achievements">
+        <div class="container" data-aos="fade-up">
+          <h2 class="display-6 fw-bold text-center section-title">
+            Achievements
+          </h2>
+          <div class="row gx-4 justify-content-center mt-4">
+            <div
+              class="col-md-6 col-lg-4 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card h-100">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    src="./assets/images/hackathon.jpeg"
+                    class="card-img-top"
+                    alt="Hackathon event"
+                    loading="lazy"
+                    width="800"
+                    height="400"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-title h5 fw-bold">
+                    2nd Place - "To the Moon and Back" Hackathon
+                  </h3>
+                  <p class="card-text">
+                    Collaborated with a team of five over 27 hours to develop an
+                    application that tracks and displays the position of the
+                    Beresheet spacecraft.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card h-100">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    src="./assets/images/apple.jpg"
+                    class="card-img-top"
+                    alt="Apple Award"
+                    loading="lazy"
+                    width="800"
+                    height="400"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-title h5 fw-bold">
+                    Apple Students Excellence Award
+                  </h3>
+                  <p class="card-text">
+                    Awarded by Apple for outstanding academic and social
+                    achievements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Volunteer Experience Section -->
+      <section class="section bg-light" id="volunteer">
+        <div class="container" data-aos="fade-up">
+          <h2 class="display-6 fw-bold text-center section-title">
+            Volunteer Experience
+          </h2>
+          <div class="row gx-4 justify-content-center mt-4">
+            <div
+              class="col-md-6 col-lg-4 mb-4 mb-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card h-100">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    src="./assets/images/teaching.jpg"
+                    class="card-img-top"
+                    alt="Teaching Hebrew to refugees"
+                    loading="lazy"
+                    width="800"
+                    height="400"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-title h5 fw-bold">
+                    Teaching Hebrew to Ukrainian Refugees
+                  </h3>
+                  <p class="card-text">
+                    Helped Ukrainian refugees integrate by teaching them Hebrew
+                    after their arrival in Israel following the Russia-Ukraine
+                    war.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card h-100">
+                <div class="position-relative overflow-hidden">
+                  <img
+                    src="./assets/images/Volunteer.jpeg"
+                    class="card-img-top"
+                    alt="Humanitarian Aid"
+                    loading="lazy"
+                    width="800"
+                    height="400"
+                  />
+                </div>
+                <div class="card-body p-4">
+                  <h3 class="card-title h5 fw-bold">
+                    Humanitarian Aid for Soldiers and Residents
+                  </h3>
+                  <p class="card-text">
+                    Organized and distributed aid packages to support soldiers
+                    and residents of the Gaza border area at the onset of the
+                    Israel war.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section bg-light" id="skills">
+        <div class="container" data-aos="fade-up">
+          <h2 class="display-6 fw-bold text-center section-title">Skills</h2>
+          <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+              <div class="card p-4">
+                <div class="card-body">
+                  <div class="skill-container">
+                    <div class="skill-name">
+                      <span class="fw-bold">C</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-container">
+                    <div class="skill-name">
+                      <span class="fw-bold">Python</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="85%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-container">
+                    <div class="skill-name">
+                      <span class="fw-bold">Linux</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-container">
+                    <div class="skill-name">
+                      <span class="fw-bold">HTML</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-container">
+                    <div class="skill-name">
+                      <span class="fw-bold">CSS</span>
+                      <span>40%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="40%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-container mb-0">
+                    <div class="skill-name">
+                      <span class="fw-bold">JavaScript</span>
+                      <span>10%</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" data-width="10%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <h3 class="text-center mt-5 mb-4">Languages</h3>
+              <div class="card">
+                <div class="card-body p-0">
+                  <ul class="list-group list-group-flush">
+                    <li
+                      class="list-group-item lang-item d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <i
+                          class="bi bi-chat-left-text me-2 text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        Hebrew
+                      </div>
+                      <span class="lang-badge">Native</span>
+                    </li>
+                    <li
+                      class="list-group-item lang-item d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <i
+                          class="bi bi-chat-left-text me-2 text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        English
+                      </div>
+                      <span class="lang-badge">Native</span>
+                    </li>
+                    <li
+                      class="list-group-item lang-item d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <i
+                          class="bi bi-chat-left-text me-2 text-primary"
+                          aria-hidden="true"
+                        ></i>
+                        Russian
+                      </div>
+                      <span class="lang-badge">Native</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <h3 class="h5 mb-3">Nicole Frumkin</h3>
+            <p class="mb-0">Microelectronics Engineer</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="social-links mb-3">
+              <a
+                href="https://www.linkedin.com/in/nicolefrumkin/"
+                class="me-3 fs-4"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn Profile"
+              >
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://github.com/nicolefrumkin"
+                class="me-3 fs-4"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub Profile"
+              >
+                <i class="bi bi-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="mailto:contact@nicolefrumkin.com"
+                class="fs-4"
+                aria-label="Email Contact"
+              >
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+            <p class="mb-0">© 2025 Nicole Frumkin. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./script.js"></script>
   </body>
-  <footer>
-    <p>&copy; 2025 Nicole Frumkin. All Rights Reserved.</p>
-    <p>Last Updated: March 2025</p>
-  </footer>
 </html>
